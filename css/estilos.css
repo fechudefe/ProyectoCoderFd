@@ -89,6 +89,7 @@ h1{
 }
 
 .footer{
+    margin-top: 25px;
     color: #fff;
     background-color: #343a40 ;
     text-align: center;
@@ -105,6 +106,117 @@ h1{
 
     color: black;
 
+}
+.section-ofertas{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.article-ofertas{
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px #343a40;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 175px;
+    width: 80%;
+}
+
+.article-ofertas img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.article-ofertas p {
+    color: #fff;
+    background-color: #343a40;
+    
+}
+
+.grid-productos{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.section-productos{
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);   
+
+}
+
+@media (max-width: 1140px){
+    
+
+    .grid-productos{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .menu-lateral li{
+        display: inline;
+        grid-column: 1/2;
+
+    }
+   
+}
+
+@media (max-width: 943px){
+    .section-productos{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 587px)
+{
+    .section-productos{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }   
+
+    .tarjetas-portada{
+        width: 100%;
+    }
+
+    .grid-productos{
+        width: 100%;
+    }
+}
+.tarjetas-portada{
+
+    text-align: center;
+    width: 90%;
+    height: 150px;
+    box-shadow: 0 0 3px #343a40;
+    align-self: center;
+    border-radius: 3px;
+}
+
+.img-portada{
+
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+.main-sobre-nosotros{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sobre-nosotros iframe{
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.main-sobre-nosotros img{
+    width: 75%;
 }
 
 .form-contacto{
