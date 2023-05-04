@@ -7,7 +7,7 @@
 }
 
 body{
-background-color: #ccc;
+background-color: lightblue;
 }
 .menu{
     display: flex;
@@ -17,6 +17,10 @@ background-color: #ccc;
     gap: 0;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+}
+
+.contenedor p{
+    font-size: 25px;
 }
 
 h1{
@@ -85,7 +89,7 @@ h1{
 }
 
 .footer{
-
+    text-align: center;
     font-family: fantasy;
     grid-column: 1/5;
 }
