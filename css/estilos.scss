@@ -5,6 +5,7 @@
 $fuentePrincipal: 'Inter', sans-serif;
 $BlacoGenerico: #FBFFFE;
 $GrisFooter: #343a40;
+$ColorFondo: #2274a5;
 
 *{
     margin: 0;
@@ -20,12 +21,23 @@ $GrisFooter: #343a40;
 }
 
 body{
-background-color: #2274a5;
+background-color: $ColorFondo;
 }
+
+
 .menu{
     display: flex;
     justify-content: space-between;
+  
 }
+
+.nav-link:hover{
+    text-decoration: underline;
+    transition: all 0.3s;
+
+}
+
+
 .contenedor{
     gap: 0;
     display: grid;
@@ -116,10 +128,12 @@ h1{
         font-size: 2em;
         color: $BlacoGenerico;
         letter-spacing: 50px;
+        transition:  all 0.5s;
     }
 
     a:hover{
-        color: #2274a5;
+        color: $ColorFondo;
+        transition: all 0.5s;
         
     }
     
