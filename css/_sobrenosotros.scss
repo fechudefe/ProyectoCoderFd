@@ -1,0 +1,16 @@
+.main-sobre-nosotros{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sobre-nosotros iframe{
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.main-sobre-nosotros img{
+    width: 75%;
+}
