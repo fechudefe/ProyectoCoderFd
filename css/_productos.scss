@@ -1,3 +1,8 @@
+@mixin medidas($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .grid-productos{
     margin-top: 20px;
     display: grid;
@@ -11,9 +16,16 @@
 }
 
 .menu-lateral{
+    h2{
+        font-family: $fuentePrincipal;
+
+        
+
+    }
     a{
-        color: #343a40;
+        color: $GrisFooter;
         font-size: 20px;
+        font-size: $fuentePrincipal;
 
     }
 }
@@ -60,18 +72,14 @@
     }
 }
 .tarjetas-portada{
-
+    @include medidas(90%,150px );
     text-align: center;
-    width: 90%;
-    height: 150px;
-    box-shadow: 0 0 3px $GrisFooter;
+    box-shadow: 0 0 8px $GrisFooter;
     align-self: center;
-    border-radius: 3px;
+    background-color: $BlacoGenerico;
 }
 
 .img-portada{
-
-    width: 100px;
-    height: 100px;
+    @include medidas(100px,100px );
     object-fit: cover;
 }

@@ -4,13 +4,17 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-}
+    h2{
+        font-family: $fuentePrincipal;
+        color: $GrisFooter;
+        text-align: center;
+    }
 
-.main-sobre-nosotros iframe{
-    width: 75%;
-    margin-bottom: 20px;
-}
-
-.main-sobre-nosotros img{
-    width: 75%;
+    iframe{
+        width: 75%;
+        margin-bottom: 20px;
+    }
+    img{
+        width: 75%;
+    }
 }

@@ -31,9 +31,9 @@ h1 {
 }
 
 .img-central {
-  grid-column: 1/5;
   width: 100%;
   height: 350px;
+  grid-column: 1/5;
   background-image: url(../img/Fondo-Main1.jpg);
 }
 
@@ -59,9 +59,9 @@ h1 {
 }
 
 .img-card {
-  border-radius: 7px;
   width: 250px;
   height: 250px;
+  border-radius: 7px;
 }
 
 .img-1 {
@@ -90,7 +90,7 @@ h1 {
 
 .footer {
   margin-top: 25px;
-  color: #fff;
+  color: #FBFFFE;
   background-color: #343a40;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -100,7 +100,7 @@ h1 {
 
 .redes a {
   font-size: 2em;
-  color: #fff;
+  color: #FBFFFE;
   letter-spacing: 50px;
 }
 .redes a:hover {
@@ -147,12 +147,12 @@ h1 {
 }
 
 .article-ofertas {
+  width: 80%;
+  height: 175px;
   border-radius: 2px;
   box-shadow: 0px 0px 2px #343a40;
   margin-top: 25px;
-  margin-bottom: 25px;
-  height: 175px;
-  width: 80%;
+  margin-bottom: 50px;
 }
 .article-ofertas img {
   width: 100%;
@@ -161,7 +161,7 @@ h1 {
      object-fit: cover;
 }
 .article-ofertas p {
-  color: #fff;
+  color: #FBFFFE;
   background-color: #343a40;
 }
 
@@ -177,9 +177,13 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.menu-lateral h2 {
+  font-family: "Inter", sans-serif;
+}
 .menu-lateral a {
   color: #343a40;
   font-size: 20px;
+  font-size: "Inter", sans-serif;
 }
 
 @media (max-width: 1140px) {
@@ -211,12 +215,12 @@ h1 {
   }
 }
 .tarjetas-portada {
-  text-align: center;
   width: 90%;
   height: 150px;
-  box-shadow: 0 0 3px #343a40;
+  text-align: center;
+  box-shadow: 0 0 8px #343a40;
   align-self: center;
-  border-radius: 3px;
+  background-color: #FBFFFE;
 }
 
 .img-portada {
@@ -233,23 +237,26 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-
+.main-sobre-nosotros h2 {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  text-align: center;
+}
 .main-sobre-nosotros iframe {
   width: 75%;
   margin-bottom: 20px;
 }
-
 .main-sobre-nosotros img {
   width: 75%;
 }
 
 .form-contacto {
+  width: 100%;
+  height: 750px;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 100%;
-  height: 750px;
   display: flex;
   flex-flow: column wrap;
 }
@@ -267,5 +274,5 @@ h1 {
 .input-button {
   border-radius: 5px;
   background-color: #343a40;
-  color: #fff;
+  color: #FBFFFE;
 }/*# sourceMappingURL=estilos.css.map */
