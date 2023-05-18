@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+//font-family: 'Inter', sans-serif;
+
+$fuentePrincipal: 'Inter', sans-serif;
+$BlacoGenerico: #fff;
+$GrisFooter: #343a40;
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +15,7 @@
 }
 
 body{
-background-color: lightblue;
+background-color: #2274a5;
 }
 .menu{
     display: flex;
@@ -23,10 +31,11 @@ background-color: lightblue;
 }
 
 h1{
+    font-family: $fuentePrincipal;
     grid-column: 1/5;
     text-align: center;
     margin-bottom: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 .img-central{
@@ -53,7 +62,7 @@ h1{
 }
 .card{
     border: 1px solid black;
-    color: #555;
+    color: $GrisFooter;
     border-radius: 7px;
     height: 250px;
 }
@@ -82,31 +91,36 @@ h1{
 }
 
 .img-4{
-    background-image: url(../img/pngwing.com.png);
+    background-image: url(../img/Brahma-Sixpack-473ml.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .footer{
     margin-top: 25px;
-    color: #fff;
-    background-color: #343a40 ;
+    color: $BlacoGenerico;
+    background-color: $GrisFooter ;
     text-align: center;
-    font-family: fantasy;
+    font-family: $fuentePrincipal;
     grid-column: 1/5;
     width: 100%;
 }
 
-.redes a{
-    font-size: 2em;
-    color: white;
-    letter-spacing: 50px;
-}
-.redes a:hover{
+.redes {
 
-    color: black;
+    a{
+        font-size: 2em;
+        color: $BlacoGenerico;
+        letter-spacing: 50px;
+    }
 
+    a:hover{
+        color: #2274a5;
+        
+    }
+    
 }
+
 
 
 

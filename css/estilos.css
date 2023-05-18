@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  background-color: lightblue;
+  background-color: #2274a5;
 }
 
 .menu {
@@ -23,10 +24,10 @@ body {
 }
 
 h1 {
+  font-family: "Inter", sans-serif;
   grid-column: 1/5;
   text-align: center;
   margin-bottom: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .img-central {
@@ -52,7 +53,7 @@ h1 {
 
 .card {
   border: 1px solid black;
-  color: #555;
+  color: #343a40;
   border-radius: 7px;
   height: 250px;
 }
@@ -82,7 +83,7 @@ h1 {
 }
 
 .img-4 {
-  background-image: url(../img/pngwing.com.png);
+  background-image: url(../img/Brahma-Sixpack-473ml.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -92,19 +93,18 @@ h1 {
   color: #fff;
   background-color: #343a40;
   text-align: center;
-  font-family: fantasy;
+  font-family: "Inter", sans-serif;
   grid-column: 1/5;
   width: 100%;
 }
 
 .redes a {
   font-size: 2em;
-  color: white;
+  color: #fff;
   letter-spacing: 50px;
 }
-
 .redes a:hover {
-  color: black;
+  color: #2274a5;
 }
 
 @media (max-width: 1013px) {
@@ -139,6 +139,12 @@ h1 {
   flex-flow: column nowrap;
   align-items: center;
 }
+.section-ofertas h2 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 2px solid #343a40;
+  font-weight: 900;
+}
 
 .article-ofertas {
   border-radius: 2px;
@@ -148,14 +154,12 @@ h1 {
   height: 175px;
   width: 80%;
 }
-
 .article-ofertas img {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .article-ofertas p {
   color: #fff;
   background-color: #343a40;
@@ -171,6 +175,11 @@ h1 {
   row-gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-lateral a {
+  color: #343a40;
+  font-size: 20px;
 }
 
 @media (max-width: 1140px) {

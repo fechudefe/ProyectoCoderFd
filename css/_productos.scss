@@ -10,6 +10,14 @@
 
 }
 
+.menu-lateral{
+    a{
+        color: #343a40;
+        font-size: 20px;
+
+    }
+}
+
 @media (max-width: 1140px){
     
 
@@ -17,9 +25,13 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .menu-lateral li{
-        display: inline;
-        grid-column: 1/2;
+    .menu-lateral {
+
+        li{
+            display: inline;
+            grid-column: 1/2;
+        }
+        
 
     }
    
@@ -52,7 +64,7 @@
     text-align: center;
     width: 90%;
     height: 150px;
-    box-shadow: 0 0 3px #343a40;
+    box-shadow: 0 0 3px $GrisFooter;
     align-self: center;
     border-radius: 3px;
 }
