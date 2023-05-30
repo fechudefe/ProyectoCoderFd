@@ -1,31 +1,60 @@
 @mixin medidas($ancho, $alto) {
-    width: $ancho;
-    height: $alto;
+  width: $ancho;
+  height: $alto;
 }
 
-.form-contacto{
-    @include medidas(100%,750px );
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-flow: column wrap;
+.form-contacto {
+  @include medidas(500px, 650px);
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: 0px 0px 5px $GrisFooter;
+  margin-top: 15px;
+  color: $BlacoGenerico;
+  box-sizing: border-box;
+  background-color: $ColorFondo;
 }
 
-.form-contacto h2{
-    font-size: 45px;
-    margin-bottom: 100px;
+.h2-contacto {
+  font-size: 2em;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.input {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: black;
+  width: 75%;
+}
+
+.input:focus {
+  outline: none;
+  color: black;
+}
+
+.area{
+    resize: none;
+}
+
+.input-button {
+  margin-top: 25px;
+  width: 75%;
+  border-radius: 5px;
+  background-color: $BlacoGenerico;
+  color: $GrisFooter;
+
+
+}
+
+
+@media  (max-width: 500px){
+    .form-contacto{
+        width: 100%;
+    }
+
     
-}
-
-.input-sugerencia{
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.input-button{
-    border-radius: 5px;
-    background-color: $GrisFooter ;
-    color: $BlacoGenerico;
+    
 }

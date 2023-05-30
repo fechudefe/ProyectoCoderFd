@@ -73,10 +73,21 @@
 }
 .tarjetas-portada{
     @include medidas(90%,150px );
+    box-shadow: 0 0 7px $GrisFooter;
     text-align: center;
-    box-shadow: 0 0 8px $GrisFooter;
     align-self: center;
     background-color: $BlacoGenerico;
+    P{
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    transition: all 1s;
+}
+
+.tarjetas-portada:hover{
+    scale: 1.05;
+    transition: all 1s;
 }
 
 .img-portada{

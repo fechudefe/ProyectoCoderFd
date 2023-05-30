@@ -21,6 +21,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 2s;  
+    color: $ColorFondo;
 
 }
 
@@ -45,7 +46,7 @@
 
     p{
         color: $BlacoGenerico;
-        background-color: $GrisFooter;
+        background-color: $ColorFondo;
     }
 }
 
