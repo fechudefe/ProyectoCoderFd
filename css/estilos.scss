@@ -21,7 +21,7 @@ $ColorFondo: #2274a5;
 }
 
 body{
-background-color: $ColorFondo;
+    background-color: white;
 }
 
 
@@ -48,15 +48,35 @@ background-color: $ColorFondo;
 }
 
 h1{
-    font-family: $fuentePrincipal;
+    font-family: fantasy;
     grid-column: 1/5;
     text-align: center;
-    margin-bottom: 0;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px  $BlacoGenerico ;
+    font-size: 5em;
+    margin-top: 20%;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
     
+
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
 }
 
 .img-central{
-    @include medidas(100%, 350px );
+    @include medidas(100%, 100vh );
     grid-column: 1/5;
     background-image: url(../img/Fondo-Main1.jpg);
 
@@ -75,16 +95,20 @@ h1{
     justify-content: space-around;
     grid-column: 1/5;
     height: 250px;
+    border-radius: 0;
+    
 }
 .card{
-    border: 1px solid black;
     color: $GrisFooter;
-    border-radius: 7px;
     height: 250px;
+    border-radius: 0;
+    margin-top: 10px;
+    box-shadow: 0 0 4px $GrisFooter;
+    
+
 }
 .img-card{
     @include medidas(250px,250px );
-    border-radius: 7px;
 }
 
 .img-1{
