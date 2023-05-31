@@ -83,8 +83,14 @@ h1{
 }
 
 .parrafo-central{
+    
     text-align: center;
     grid-column: 1/5;
+
+    span{
+        text-transform: uppercase;
+        color: $ColorFondo;
+    }
 }
 
 .cards{
